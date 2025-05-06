@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Social Media Profiles</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for social media icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: 
+        radial-gradient(circle at 10% 20%, rgba(15, 32, 39, 0.9) 0%, rgba(44, 83, 100, 0.9) 90%),
+        url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop') no-repeat center center;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #e0e0e0;
+    }
+
+    .card {
+      background: rgba(18, 18, 18, 0.85);
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      max-width: 500px;
+      width: 90%;
+      transition: transform 0.3s;
+      border: 1px solid rgba(100, 255, 218, 0.2);
+      backdrop-filter: blur(8px);
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 40px rgba(100, 255, 218, 0.25);
+    }
+
+    .card h1 {
+      font-size: 28px;
+      color: #64ffda;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .card h2 {
+      font-size: 16px;
+      color: #8892b0;
+      font-weight: 500;
+      margin-top: 0;
+      font-family: 'Source Code Pro', monospace;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #ccd6f6;
+      margin-bottom: 25px;
+      font-family: 'Source Code Pro', monospace;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .social-icons a {
+      text-decoration: none;
+      font-size: 24px;
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      border-radius: 12px;
+      color: white;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(100, 255, 218, 0.2);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.15) rotate(5deg);
+      background: rgba(100, 255, 218, 0.1);
+      border-color: rgba(100, 255, 218, 0.4);
+      box-shadow: 0 6px 16px rgba(100, 255, 218, 0.3);
+    }
+
+    /* Social Icon Colors */
+    .facebook { color: #1877f2; }
+    .twitter { color: #1da1f2; }
+    .instagram { color: #e4405f; }
+    .linkedin { color: #0a66c2; }
+    .youtube { color: #ff0000; }
+    .tiktok { color: #000000; }
+    .reddit { color: #ff4500; }
+    .pinterest { color: #e60023; }
+    .whatsapp { color: #25d366; }
+    .telegram { color: #0088cc; }
+    .discord { color: #5865f2; }
+    .spotify { color: #1db954; }
+    .snapchat { color: #fffc00; }
+
+    .social-name {
+      display: block;
+      font-size: 10px;
+      margin-top: 5px;
+      font-family: 'Source Code Pro', monospace;
+      color: #8892b0;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .social-icons a:hover .social-name {
+      opacity: 1;
+    }
+
+    .glow {
+      animation: glow 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        box-shadow: 0 0 5px rgba(100, 255, 218, 0.5);
+      }
+      to {
+        box-shadow: 0 0 20px rgba(100, 255, 218, 0.8);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card glow">
+    <h1>Tatenda Chabata&nbsp;</h1>
+    <h2>&nbsp;</h2>
+    <p>Connect with me on social media</p>
+    
+    <div class="social-icons">
+      <a href="https://www.facebook.com/share/1JwYQawdzA/?mibextid=wwXIfr" class="facebook" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+        <span class="social-name">Facebook</span>
+      </a>
+      <a href="https://x.com/tatenda_chabz?s=21" class="twitter" aria-label="Twitter">
+        <i class="fab fa-twitter"></i>
+        <span class="social-name">Twitter</span>
+      </a>
+      <a href="https://www.instagram.com/tatenda_chabz?igsh=cWFhZHhhMHBldnpt" class="instagram" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+        <span class="social-name">Instagram</span>
+      </a>
+      <a href="www.linkedin.com/in/tatenda-clement-chabata-567538353" class="linkedin" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+        <span class="social-name">LinkedIn</span>
+      </a>
+      <a href="http://www.youtube.com/@Chabz_Production" class="youtube" aria-label="YouTube">
+        <i class="fab fa-youtube"></i>
+        <span class="social-name">YouTube</span>
+      </a>
+      <a href="http://tiktok.com/@tatenda_chabata" class="tiktok" aria-label="TikTok">
+        <i class="fab fa-tiktok"></i>
+        <span class="social-name">TikTok</span>
+      </a>
+      <a href="#" class="reddit" aria-label="Reddit">
+        <i class="fab fa-reddit-alien"></i>
+        <span class="social-name">Reddit</span>
+      </a>
+      <a href="#" class="pinterest" aria-label="Pinterest">
+        <i class="fab fa-pinterest-p"></i>
+        <span class="social-name">Pinterest</span>
+      </a>
+      <a href="#" class="whatsapp" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="social-name">WhatsApp</span>
+      </a>
+      <a href="#" class="telegram" aria-label="Telegram">
+        <i class="fab fa-telegram-plane"></i>
+        <span class="social-name">Telegram</span>
+      </a>
+      <a href="#" class="discord" aria-label="Discord">
+        <i class="fab fa-discord"></i>
+        <span class="social-name">Discord</span>
+      </a>
+      <a href="#" class="spotify" aria-label="Spotify">
+        <i class="fab fa-spotify"></i>
+        <span class="social-name">Spotify</span>
+      </a>
+    </div>
+</div>
+</body>
+</html>
